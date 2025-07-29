@@ -1,0 +1,12 @@
+{
+    "import": [
+        {
+            "path": "Luna-Flow/linear-algebra",
+            "alias": "la"
+        },
+        {
+            "path": "moonbitlang/wasm4",
+            "alias": "wasm"
+        }
+    ]
+}
