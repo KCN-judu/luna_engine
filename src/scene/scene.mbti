@@ -1,0 +1,21 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "KCN-judu/luna_engine/scene"
+
+import(
+  "KCN-judu/luna_engine/core"
+)
+
+// Values
+
+// Errors
+
+// Types and methods
+pub(all) struct Scene {
+  box : (@core.Position, @core.Position)
+  entities : @core.EntityList
+}
+
+// Type aliases
+
+// Traits
+

@@ -1,5 +1,5 @@
 ///|
 pub(all) struct Scene {
-  box: (RenderPosition, RenderPosition)
-  entities: EntityList
+  box : (Position, Position)
+  entities : EntityList
 }
