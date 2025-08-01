@@ -1,0 +1,30 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "KCN-judu/luna_engine/core"
+
+import(
+  "moonbitlang/core/set"
+)
+
+// Values
+
+// Errors
+
+// Types and methods
+pub(all) struct Entity {
+  id : Int
+}
+impl Eq for Entity
+impl Hash for Entity
+
+pub(all) type EntityList @set.Set[Entity]
+fn EntityList::inner(Self) -> @set.Set[Entity]
+
+pub(all) struct Position {
+  x : Double
+  y : Double
+}
+
+// Type aliases
+
+// Traits
+

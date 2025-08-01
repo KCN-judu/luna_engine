@@ -1,2 +1,2 @@
 ///|
-typealias @lec.(EntityList, Entity, PhysicPosition, RenderPosition)
+typealias @lec.(EntityList, Entity, Position)
