@@ -1,0 +1,8 @@
+{
+    "import": [
+        {
+            "path" : "KCN-judu/luna_engine/core",
+            "alias" : "lec"
+        }
+    ]
+}
