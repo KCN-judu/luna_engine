@@ -1,1 +1,12 @@
-{}
+{
+	"import": [
+		{
+			"path": "Luna-Flow/luna-generic",
+			"alias": "lg"
+		},
+		{
+			"path": "KCN-judu/luna_engine/core",
+			"alias": "lec"
+		}
+	]
+}
