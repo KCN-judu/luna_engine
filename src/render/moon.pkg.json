@@ -1,8 +1,8 @@
 {
-    "import": [
-        {
-            "path": "Luna-Flow/linear-algebra/mutable",
-            "alias": "la"
-        }
-    ]
+	"import": [
+		{
+			"path": "Luna-Flow/linear-algebra/mutable",
+			"alias": "la"
+		}
+	]
 }
