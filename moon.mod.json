@@ -1,17 +1,17 @@
 {
-	"name": "KCN-judu/luna_engine",
-	"version": "0.1.0",
-	"deps": {
-		"moonbitlang/x": "0.4.31",
-		"Luna-Flow/linear-algebra": "0.1.6-beta-2",
-		"Kaida-Amethyst/math": "0.1.19",
-		"Yoorkin/rabbit-tea": "0.10.9"
-	},
-	"readme": "README.md",
-	"repository": "",
-	"license": "MIT",
-	"keywords": [],
-	"description": "",
-	"source": "src",
-	"preferred-target": "js"
+  "name": "KCN-judu/luna_engine",
+  "version": "0.1.0",
+  "deps": {
+    "moonbitlang/x": "0.4.31",
+    "Luna-Flow/linear-algebra": "0.1.6-beta-2",
+    "Kaida-Amethyst/math": "0.1.19",
+    "Yoorkin/rabbit-tea": "0.10.9"
+  },
+  "readme": "README.md",
+  "repository": "",
+  "license": "MIT",
+  "keywords": [],
+  "description": "",
+  "source": "src",
+  "preferred-target": "js"
 }
