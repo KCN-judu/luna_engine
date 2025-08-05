@@ -1,25 +1,4 @@
 ///|
-typealias Vector2D as Velocity
-
-///|
-typealias Vector2D as Acceleration
-
-///|
-typealias Vector2D as Displacement
-
-///|
-typealias Vector2D as Force
-
-///|
-typealias Vector2D as Momentum
-
-///|
-typealias Scalar as Mass
-
-///|
-typealias Scalar as Time
-
-///|
 pub fn eval_a(f : Force, m : Mass) -> Acceleration {
   m.inv().mul_vec2d(f)
 }
@@ -30,17 +9,14 @@ pub fn eval_delta_v(a : Acceleration, t : Time) -> Velocity {
 }
 
 ///|
-pub fn eval_delta_d(
-  a~ : Acceleration? = None,
-  v : Velocity,
-  t : Time,
-) -> Displacement {
+pub fn eval_delta_d(a : Acceleration, v : Velocity, t : Time) -> Displacement {
   let vt = v.mul_scalar(t)
-  if a is Some(a_) {
-    vt + a_.mul_scalar(t * t / 2)
-  } else {
-    vt
-  }
+  vt + a.mul_scalar(t * t / 2)
+}
+
+///|
+pub fn apply_d_to_pos(p : Position, d : Displacement) -> Position {
+  Position::{ x: p.x + d.x().inner(), y: p.y + d.y().inner() }
 }
 
 ///|

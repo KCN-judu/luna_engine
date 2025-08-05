@@ -1,11 +1,66 @@
 // Generated using `moon info`, DON'T EDIT IT
 package "KCN-judu/luna_engine/physics"
 
+import(
+  "KCN-judu/luna_engine/core"
+)
+
 // Values
+fn apply_d_to_pos(@core.Position, Vector2D) -> @core.Position
+
+fn eval_a(Vector2D, Scalar) -> Vector2D
+
+fn eval_delta_d(Vector2D, Vector2D, Scalar) -> Vector2D
+
+fn eval_delta_v(Vector2D, Scalar) -> Vector2D
+
+fn eval_p(Vector2D, Scalar) -> Vector2D
 
 // Errors
 
 // Types and methods
+pub(all) struct Property {
+  m : Scalar
+  v : Scalar
+  mu : Scalar
+}
+
+type Scalar
+fn Scalar::mul_vec2d(Self, Vector2D) -> Vector2D
+impl @Luna-Flow/luna-generic.Inverse for Scalar
+impl @Luna-Flow/luna-generic.One for Scalar
+impl @Luna-Flow/luna-generic.Zero for Scalar
+impl Add for Scalar
+impl Div for Scalar
+impl Eq for Scalar
+impl Mul for Scalar
+impl Neg for Scalar
+impl Sub for Scalar
+
+pub(all) struct State {
+  mut pos : @core.Position
+  mut v : Vector2D
+  mut a : Vector2D
+  mut f : Vector2D
+  prop : Property
+}
+fn State::eval_next_tick(Self) -> Unit
+fn State::eval_next_ticks(Self, Scalar) -> Unit
+
+pub struct Vector2D(Scalar, Scalar)
+
+fn Vector2D::map(Self, (Scalar) -> Scalar) -> Self
+fn Vector2D::mirror_x(Self) -> Self
+fn Vector2D::mirror_y(Self) -> Self
+fn Vector2D::mul_scalar(Self, Scalar) -> Self
+fn Vector2D::sum(Array[Self]) -> Self
+fn Vector2D::x(Self) -> Scalar
+fn Vector2D::y(Self) -> Scalar
+impl @Luna-Flow/luna-generic.Zero for Vector2D
+impl Add for Vector2D
+impl Eq for Vector2D
+impl Neg for Vector2D
+impl Sub for Vector2D
 
 // Type aliases
 
