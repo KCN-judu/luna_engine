@@ -1,5 +1,5 @@
 ///|
-type Scalar Double derive(Eq)
+struct Scalar(Double) derive(Eq)
 
 ///|
 pub impl Add for Scalar with op_add(a, b) {
@@ -44,5 +44,5 @@ pub impl Zero for Scalar with zero() {
 ///|
 pub fn Scalar::mul_vec2d(self : Scalar, vec : Vector2D) -> Vector2D {
   let (x, y) = vec.inner()
-  (self * x, self * y)
+  Vector2D(self * x, self * y)
 }
