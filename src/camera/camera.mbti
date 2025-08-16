@@ -1,0 +1,31 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "KCN-judu/luna_engine/camera"
+
+// Values
+
+// Errors
+
+// Types and methods
+pub(all) struct CameraImmut {
+  pos : (Int, Int)
+  width : Int
+  height : Int
+}
+impl Camera for CameraImmut
+
+pub(all) struct CameraMutable {
+  mut pos : (Int, Int)
+  width : Int
+  height : Int
+}
+impl Camera for CameraMutable
+
+// Type aliases
+
+// Traits
+pub trait Camera {
+  get_center(Self) -> (Int, Int)
+  //LT pos, width, height
+  new((Int, Int), Int, Int) -> Self
+}
+

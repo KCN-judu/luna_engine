@@ -16,6 +16,7 @@ pub(all) struct CameraMutable {
 pub trait Camera {
   get_center(Self) -> (Int, Int)
   new((Int, Int), Int, Int) -> Self
+  //object_in_view(Self, (Int, Int)) -> Bool
 }
 
 ///|
