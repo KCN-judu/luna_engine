@@ -16,13 +16,20 @@ pub(all) struct Entity {
 impl Eq for Entity
 impl Hash for Entity
 
-pub(all) type EntityList @set.Set[Entity]
+pub(all) struct EntityList(@set.Set[Entity])
 fn EntityList::inner(Self) -> @set.Set[Entity]
 
 pub(all) struct Position {
   x : Double
   y : Double
 }
+fn Position::floor_to_int_tuple(Self) -> (Int, Int)
+fn Position::map(Self, (Double) -> Double) -> Self
+fn Position::mid_pos(Self, Self) -> Self
+fn Position::round_to_int_tuple(Self) -> (Int, Int)
+impl Add for Position
+impl Neg for Position
+impl Sub for Position
 
 // Type aliases
 
